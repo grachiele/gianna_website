@@ -1,9 +1,15 @@
-import React from react
+import React from 'react'
+import Home from '../components/Home'
 
 class HomeContainer extends React.Component {
 
   render(){
-    return null
+    return (
+      <div>
+        <h1>HomeContainer</h1>
+        <Home />
+      </div>
+    )
   }
 }
 

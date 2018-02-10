@@ -1,9 +1,11 @@
-import React from react
+import React from 'react'
 
 class Home extends React.Component {
 
   render(){
-    return null
+    return (
+      <h2>Home</h2>
+    )
   }
 }
 
