@@ -7,12 +7,14 @@ class NavBar extends React.Component {
 
   handleItemClick = (e, { name }) => {
     this.setState(
-      { activeItem: name }
+      { activeItem: name,
+      color: 'pink' }
     )
   }
 
 
   render() {
+    const { color } = this.state
     const { activeItem } = this.state
 
     return(
@@ -22,6 +24,7 @@ class NavBar extends React.Component {
         </Menu.Item>
 
         <Menu.Item
+          color={color}
           name='home'
           active={activeItem === 'home'}
           onClick={this.handleItemClick}
@@ -30,6 +33,7 @@ class NavBar extends React.Component {
         </Menu.Item>
 
         <Menu.Item
+          color={color}
           name='about'
           active={activeItem === 'about'}
           onClick={this.handleItemClick}
@@ -38,6 +42,7 @@ class NavBar extends React.Component {
         </Menu.Item>
 
         <Menu.Item
+          color={color}
           name='reviews'
           active={activeItem === 'reviews'}
           onClick={this.handleItemClick}
