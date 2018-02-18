@@ -8,7 +8,7 @@ class NavBar extends React.Component {
   handleItemClick = (e, { name }) => {
     this.setState(
       { activeItem: name,
-      color: 'pink' }
+      color: 'teal' }
     )
   }
 
