@@ -22,27 +22,27 @@ class NavBar extends React.Component {
         </Menu.Item>
 
         <Menu.Item
-          name='features'
-          active={activeItem === 'features'}
+          name='home'
+          active={activeItem === 'home'}
           onClick={this.handleItemClick}
         >
-          Features
+          Home
         </Menu.Item>
 
         <Menu.Item
-          name='testimonials'
-          active={activeItem === 'testimonials'}
+          name='about'
+          active={activeItem === 'about'}
           onClick={this.handleItemClick}
         >
-          Testimonials
+          About
         </Menu.Item>
 
         <Menu.Item
-          name='sign-in'
-          active={activeItem === 'sign-in'}
+          name='reviews'
+          active={activeItem === 'reviews'}
           onClick={this.handleItemClick}
         >
-          Sign-in
+          Reviews
         </Menu.Item>
       </Menu>
     )
