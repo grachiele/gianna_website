@@ -8,3 +8,5 @@ class Reviews extends React.Component {
     )
   }
 }
+
+export default Reviews
