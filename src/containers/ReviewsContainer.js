@@ -1,16 +1,16 @@
 import React from 'react'
-import About from '../components/About'
+import Reviews from '../components/Reviews'
 
-class AboutContainer extends React.Component {
+class ReviewsContainer extends React.Component {
 
   render(){
     return (
       <div>
-        <h1>AboutContainer</h1>
-        <About />
+        <h1>ReviewsContainer</h1>
+        <Reviews />
       </div>
     )
   }
 }
 
-export default AboutContainer
+export default ReviewsContainer
