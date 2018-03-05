@@ -4,7 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
-  state = {}
+  state = {
+    
+  }
 
   handleItemClick = (e, { name }) => {
     this.setState(
