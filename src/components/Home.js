@@ -1,7 +1,22 @@
 import React from 'react'
+import { Card } from 'semantic-ui-react'
 
 class Home extends React.Component {
+  state = {
+    index: 0
+  }
 
+  onClick() {
+      if (this.state.index + 1 === this.imgList.length) {
+      this.setState({
+        index: 0
+      })
+    } else {
+      this.setState({
+        index: this.state.index + 1
+      })
+    }
+  }
   render(){
     const img0 = require('./images/IMG_6197.jpg');
     const img1 = require('./images/IMG_6198.jpg');
