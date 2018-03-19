@@ -1,12 +1,16 @@
 import React from 'react'
-import { Card } from 'semantic-ui-react'
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 class Home extends React.Component {
-  state = {
-    index: 0
+
+  constructor(){
+    super()
+    this.state = {
+      index: 0
+    }
   }
 
-  onClick() {
+  onClickForward() {
       if (this.state.index + 1 === this.imgList.length) {
       this.setState({
         index: 0
@@ -17,6 +21,19 @@ class Home extends React.Component {
       })
     }
   }
+
+  onClickBack() {
+      if (this.state.index - 1 === -1) {
+      this.setState({
+        index: this.imgList.length - 1
+      })
+    } else {
+      this.setState({
+        index: this.state.index - 1
+      })
+    }
+  }
+
   render(){
     const img0 = require('./images/IMG_6197.jpg');
     const img1 = require('./images/IMG_6198.jpg');
@@ -27,11 +44,28 @@ class Home extends React.Component {
     const img6 = require('./images/IMG_6202.jpg');
 
     const imgList = [img0, img1, img2, img3, img4, img5, img6];
-
+    console.log(this.state.index)
     return (
       <div>
         <h2>Home</h2>
-
+        <Card>
+          <Image src={imgList[this.state.index]} />
+          <Card.Content>
+            <Card.Header>Naked Apricot Cake</Card.Header>
+            <Card.Meta>Apricot with a frosting of sorts</Card.Meta>
+            <Card.Description>Naked layered cake</Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a onClick={this.onClickBack}>
+              Last Picture
+              <Icon name='left chevron' />
+            </a>
+            <a onClick={this.onClickForward}>
+              <Icon name='right chevron' />
+              Next Picture
+            </a>
+          </Card.Content>
+        </Card>
       </div>
     )
   }
