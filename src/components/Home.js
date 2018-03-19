@@ -15,7 +15,7 @@ class Home extends React.Component {
     const img3 = require('./images/IMG_6200.jpg');
     const img4 = require('./images/IMG_6201.jpg');
     const img5 = require('./images/IMG_6202.jpg');
-    const img6 = require('./images/IMG_6202.jpg');
+    const img6 = require('./images/IMG_6203.jpg');
 
     this.state = {
       index: 0,
@@ -55,13 +55,13 @@ class Home extends React.Component {
       <div>
         <h2>Home</h2>
         <Card>
-          <Image src={this.state.imgList[this.state.index]} />
+          <Image src={this.state.imgList[this.state.index]} size='medium'/>
           <Card.Content>
             <Card.Header>Naked Apricot Cake</Card.Header>
             <Card.Meta>Apricot with a frosting of sorts</Card.Meta>
             <Card.Description>Naked layered cake</Card.Description>
           </Card.Content>
-          <Card.Content extra>
+          <Card.Content extra textAlign='center'>
             <a onClick={this.onClickBack}>
               Last Picture
               <Icon name='left chevron' />
