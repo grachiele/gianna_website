@@ -49,8 +49,6 @@ class Home extends React.Component {
   }
 
   render(){
-
-    console.log(this.state.index)
     return (
       <div>
         <h2>Home</h2>
