@@ -3,3 +3,14 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.imgContainer {
+  height: 435px;
+  width: 290px;
+  vertical-align: middle;
+}
+
+.innerImgContainer {
+  height: 100%;
+  vertical-align: middle;
+}
