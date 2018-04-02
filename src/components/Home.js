@@ -53,7 +53,9 @@ class Home extends React.Component {
       <div>
         <h2>Home</h2>
         <Card>
-          <Image src={this.state.imgList[this.state.index]} size='medium'/>
+          <div className="imgContainer">
+            <Image src={this.state.imgList[this.state.index]} size='medium'/>
+          </div>
           <Card.Content>
             <Card.Header>Naked Apricot Cake</Card.Header>
             <Card.Meta>Apricot with a frosting of sorts</Card.Meta>
