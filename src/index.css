@@ -6,11 +6,7 @@ body {
 
 .imgContainer {
   height: 435px;
+  line-height: 435px;
   width: 290px;
-  vertical-align: middle;
-}
-
-.innerImgContainer {
-  height: 100%;
   vertical-align: middle;
 }
