@@ -62,8 +62,8 @@ class ApricotCard extends React.Component {
             <Card.Description>Naked layered cake</Card.Description>
           </Card.Content>
           <Card.Content extra textAlign='center'>
-            <Button onClick={this.onClickBack} content='Back' icon='left arrow' labelPosition='left' />
-            <Button onClick={this.onClickForward} content='Next' icon='right arrow' labelPosition='right' />
+            <Button basic color='teal' onClick={this.onClickBack} content='Back' icon='left arrow' labelPosition='left' />
+            <Button basic color='teal' onClick={this.onClickForward} content='Next' icon='right arrow' labelPosition='right' />
           </Card.Content>
         </Card>
       )
