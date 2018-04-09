@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Button, Card, Image } from 'semantic-ui-react'
 
 class Home extends React.Component {
 
@@ -62,14 +62,8 @@ class Home extends React.Component {
             <Card.Description>Naked layered cake</Card.Description>
           </Card.Content>
           <Card.Content extra textAlign='center'>
-            <a onClick={this.onClickBack}>
-              Last Picture
-              <Icon name='left chevron' />
-            </a>
-            <a onClick={this.onClickForward}>
-              <Icon name='right chevron' />
-              Next Picture
-            </a>
+            <Button onClick={this.onClickBack} content='Back' icon='left arrow' labelPosition='left' />
+            <Button onClick={this.onClickForward} content='Next' icon='right arrow' labelPosition='right' />
           </Card.Content>
         </Card>
       </div>
