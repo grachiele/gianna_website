@@ -1,10 +1,11 @@
 import React from 'react'
 import { Button, Card, Image } from 'semantic-ui-react'
+import ApricotCakeCard from './ApricotCakeCard.js'
 
 class Home extends React.Component {
 
   constructor(){
-    super()
+    super();
 
     this.onClickForward = this.onClickForward.bind(this)
     this.onClickBack = this.onClickBack.bind(this)
