@@ -55,8 +55,8 @@ class ApricotCard extends React.Component {
           </div>
           <Card.Content>
             <Card.Header>Cookies Cake</Card.Header>
-            <Card.Meta>Apricot with a frosting of sorts</Card.Meta>
-            <Card.Description>Naked layered cake</Card.Description>
+            <Card.Meta>Cookies with hard sugar icing for engagment party</Card.Meta>
+            <Card.Description>Sugar Cookies</Card.Description>
           </Card.Content>
           <Card.Content extra textAlign='center'>
             <Button basic color='teal' onClick={this.onClickBack} content='Back' icon='left arrow' labelPosition='left' />
