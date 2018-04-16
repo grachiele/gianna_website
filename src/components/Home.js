@@ -1,16 +1,19 @@
 import React from 'react'
 import ApricotCakeCard from './ApricotCakeCard.js'
 import CookieCard from './CookieCard.js'
+import { Card, Grid } from 'semantic-ui-react'
 
 class Home extends React.Component {
 
   render(){
     return (
-      <div>
+      <Grid>
         <h2>Home</h2>
-        <ApricotCakeCard />
-        <CookieCard />
-      </div>
+        <Card.Group itemsPerRow= {4}>
+          <ApricotCakeCard />
+          <CookieCard />
+        </Card.Group>
+      </Grid>
     )
   }
 }
