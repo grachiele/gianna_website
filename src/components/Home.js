@@ -8,8 +8,7 @@ class Home extends React.Component {
   render(){
     return (
       <Grid>
-        <h2>Home</h2>
-        <Card.Group itemsPerRow= {4}>
+        <Card.Group>
           <ApricotCakeCard />
           <CookieCard />
         </Card.Group>
