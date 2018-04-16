@@ -1,5 +1,6 @@
 import React from 'react'
 import ApricotCakeCard from './ApricotCakeCard.js'
+import CookieCard from './CookieCard.js'
 
 class Home extends React.Component {
 
@@ -8,6 +9,7 @@ class Home extends React.Component {
       <div>
         <h2>Home</h2>
         <ApricotCakeCard />
+        <CookieCard />
       </div>
     )
   }
