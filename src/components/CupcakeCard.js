@@ -49,9 +49,7 @@ class CupcakeCard extends React.Component {
     render(){
       return (
         <Card>
-          <div className="imgContainer">
-              <Image src={this.state.imgList[this.state.index]} size='medium' verticalAlign="middle"/>
-          </div>
+          <Image src={this.state.imgList[this.state.index]} size='medium' verticalAlign="middle" className="imgContainer"/>
           <Card.Content>
             <Card.Header>Pumpkin Cupcakes</Card.Header>
             <Card.Meta>Cookies with hard sugar icing for engagment party</Card.Meta>
