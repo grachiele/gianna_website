@@ -10,8 +10,8 @@ class CupcakeCard extends React.Component {
       this.onClickBack = this.onClickBack.bind(this)
       this.onClickForward = this.onClickForward.bind(this)
 
-      const img0 = require('./images/cookies/IMG_5413.png');
-      const img1 = require('./images/cookies/IMG_5414.png');
+      const img0 = require('./images/cupcakes/IMG_5413.png');
+      const img1 = require('./images/cupcakes/IMG_5414.png');
 
 
       this.state = {
