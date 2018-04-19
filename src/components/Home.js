@@ -8,10 +8,16 @@ class Home extends React.Component {
   render(){
     return (
       <Grid>
-        <Card.Group>
-          <ApricotCakeCard />
-          <CookieCard />
-        </Card.Group>
+        <Grid.Column width={2}>
+        </Grid.Column>
+        <Grid.Column width={12}>
+          <Card.Group>
+            <ApricotCakeCard />
+            <CookieCard />
+          </Card.Group>
+        </Grid.Column>
+        <Grid.Column width={2}>
+        </Grid.Column>
       </Grid>
     )
   }
