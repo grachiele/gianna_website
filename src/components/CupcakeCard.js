@@ -66,4 +66,4 @@ class CupcakeCard extends React.Component {
     }
 }
 
-export default ApricotCard
+export default CupcakeCard
