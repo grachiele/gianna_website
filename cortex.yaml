@@ -1,3 +1,8 @@
-x-cortex-git:
-  github:
-    repository: grachiele/gianna_website
+openapi: 3.0.0
+info:
+  title: My Service
+  description: This is my cool service.
+  x-cortex-tag: my-service
+  x-cortex-git:
+    github:
+      repository: grachiele/gianna_website
